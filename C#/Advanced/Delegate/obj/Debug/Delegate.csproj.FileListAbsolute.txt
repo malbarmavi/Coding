@@ -1,0 +1,6 @@
+C:\Users\Muhammad\Desktop\CodeSnippets\C#\Advanced\Delegate\bin\Debug\Delegate.exe.config
+C:\Users\Muhammad\Desktop\CodeSnippets\C#\Advanced\Delegate\bin\Debug\Delegate.exe
+C:\Users\Muhammad\Desktop\CodeSnippets\C#\Advanced\Delegate\bin\Debug\Delegate.pdb
+C:\Users\Muhammad\Desktop\CodeSnippets\C#\Advanced\Delegate\obj\Debug\Delegate.csprojResolveAssemblyReference.cache
+C:\Users\Muhammad\Desktop\CodeSnippets\C#\Advanced\Delegate\obj\Debug\Delegate.exe
+C:\Users\Muhammad\Desktop\CodeSnippets\C#\Advanced\Delegate\obj\Debug\Delegate.pdb
