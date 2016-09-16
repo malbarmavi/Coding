@@ -11,17 +11,25 @@ namespace Interfaces
   {
     static void Main(string[] args)
     {
-      //Basic implementation
+      // Basic implementation
 
-      Student zain = new Student()
-      { Name = "Zain", LastName = "Albarmawi", Address = "TR,Istanbul", Id = "TR01", Age = 5 };
+      Student zain = new Student() { Name = "Zain", LastName = "Albarmawi", Address = "TR,Istanbul", Id = "TR01", Age = 5 };
       Employee omar = new Employee() { Name = "Omar", LastName = "Albarmawi", Address = "TR,Istanbul", Age = 23 };
 
-
       Console.WriteLine("Printing : ");
-
       PrintPersonInfo(zain);
       PrintPersonInfo(omar);
+      Control control = new Control();
+      ISavable savable = control;
+      IDeletable deletable = control;
+
+      // Savable 
+      control.Save();
+      savable.Save();
+
+      // Deletable
+      control.Delete();
+      deletable.Delete();
 
       Console.ReadKey();
     }

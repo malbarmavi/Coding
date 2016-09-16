@@ -4,18 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interfaces
+namespace Interfaces.Person
 {
-  using Person;
-  public class Employee : IPerson
+
+  public class Student : IPerson
   {
     public string Name { get; set; }
     public string LastName { get; set; }
     public string Address { get; set; }
     public float Age { get; set; }
-
-    public string FullName() => $"{Name} {LastName}";
+    public string Id { get; set; }
+    public string FullName() => $"{Id}, {Name} {LastName}, {Address}";
 
     public bool IsMinor() => Age < 18;
+
+
   }
 }
