@@ -1,5 +1,5 @@
 ﻿
-// the point() ,point(coords) call point(x,y)
+// (point() ,point(coords)) call point(x,y)
 
 class point
 {
