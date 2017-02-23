@@ -9,7 +9,7 @@
             3.	If Type(x) is Number, then
                 i.	If x is NaN, return false.
                 ii.	If y is NaN, return false.
-                iii.	If x is the same Number value as y, return true.
+                iii.If x is the same Number value as y, return true.
                 iv.	If x is +0 and y is −0, return true.
                 v.	If x is −0 and y is +0, return true.
                 vi.	Return false.
@@ -29,3 +29,60 @@
         return the result of the comparison ToPrimitive(x) == y.
         10.	Return false.
 */
+
+function  test(x,y,result) { 
+    if ((x == y) == result) {
+        console.info(`Test pass (${x} == ${y}) => ${result}`)
+    } else { 
+        console.error(`Test failed ${x} == ${y} =>${result}`)
+    }
+}
+
+
+test(undefined,undefined,true);
+test(null,null,true);
+
+test(NaN,NaN,false);
+test(NaN,1,false);
+test(1,1,true);
+test(-0,+0,true);
+test(+0,-0,true);
+test(5,2,false);
+test(5,2.0,false);
+
+test("js","js",true);
+test("hello","hi",false);
+test("","",true);
+
+test(true,true,true);
+test(false,false,true);
+test(true,false,false);
+
+
+test(null,undefined,true);
+test(undefined,null,true);
+
+test(10,"10",true);
+test("2",2,true);
+test(5,"2.0",false);
+test(true,1,true);
+test(false,0,true);
+test(true,2,false);
+
+test(true,"1",true);
+test(false,"0",true);
+
+test(1,new Number(1),true);
+test("Hello",new String("Hello"),true);
+
+test(new Number(5),5,true);
+test(new String("Hi"),"Hi",true);
+
+
+
+test([],[],false);
+test([1,2,3],[1,2,3],false);
+test(new String("Hi"),new String("Hi"),false);
+test(new String(""),new String(""),false);
+test(new Number(1),new Number(1),false);
+test(new Number(1),new Number(1),true);
