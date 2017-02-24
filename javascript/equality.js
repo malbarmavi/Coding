@@ -38,7 +38,6 @@ function  test(x,y,result) {
     }
 }
 
-
 test(undefined,undefined,true);
 test(null,null,true);
 
@@ -58,7 +57,6 @@ test(true,true,true);
 test(false,false,true);
 test(true,false,false);
 
-
 test(null,undefined,true);
 test(undefined,null,true);
 
@@ -77,8 +75,6 @@ test("Hello",new String("Hello"),true);
 
 test(new Number(5),5,true);
 test(new String("Hi"),"Hi",true);
-
-
 
 test([],[],false);
 test([1,2,3],[1,2,3],false);
