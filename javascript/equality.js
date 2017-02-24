@@ -85,4 +85,5 @@ test([1,2,3],[1,2,3],false);
 test(new String("Hi"),new String("Hi"),false);
 test(new String(""),new String(""),false);
 test(new Number(1),new Number(1),false);
-test(new Number(1),new Number(1),true);
+test(new Number(1),+new Number(1),true);
+test({},{},false);
