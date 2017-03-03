@@ -41,3 +41,7 @@ console.log(s.split());
 console.log(s.split(""));
 console.log(s.split(" "));
 console.log(s.split("",6));
+
+console.log(s.concat("And more."))
+console.log(s.replace("Hello","Hi"));
+console.log(s.repeat(2));
